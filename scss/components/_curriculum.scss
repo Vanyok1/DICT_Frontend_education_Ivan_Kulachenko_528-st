@@ -1,0 +1,13 @@
+#curriculum {
+  .tables-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+
+    .curriculum-table {
+      flex: 1 1 380px;
+      width: auto;
+    }
+  }
+}

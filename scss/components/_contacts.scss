@@ -1,0 +1,22 @@
+#contact {
+  .contact-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    > div {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+  }
+
+  @include max($tab) {
+    .contact-columns {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: $red;
+  color: $white;
+  font-size: 22px;
+  line-height: 1;
+  text-decoration: none;
+
+  &:hover {
+    background: $red-hover;
+  }
+}
