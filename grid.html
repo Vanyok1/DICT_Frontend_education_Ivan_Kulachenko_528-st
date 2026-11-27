@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout | Department of Information and Communication Technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div class="grid-page">
+
+    <header class="grid-header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Логотип кафедри ІКТ ХАІ" title="Кафедра ІКТ ХАІ" width="104" height="30">
+        </a>
+        <h1>Header</h1>
+    </header>
+
+    <nav class="grid-nav" aria-label="Головне меню">
+        <ul class="main-menu">
+            <li><a class="menu-link" href="index.html#specialties">Спеціальності</a></li>
+            <li><a class="menu-link" href="index.html#curriculum">Курс</a></li>
+            <li><a class="menu-link" href="index.html#admission">Вступ</a></li>
+            <li><a class="menu-link" href="index.html#science">Наука</a></li>
+            <li><a class="menu-link" href="index.html#news">Новини</a></li>
+            <li><a class="menu-link" href="index.html#contact">Контакти</a></li>
+            <li><a class="menu-link is-active" href="grid.html" aria-current="page">Grid Layout</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid-main" id="top">
+        <section class="grid-intro">
+            <h2>Основна частина сторінки</h2>
+            <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+        </section>
+
+        <div class="grid-body">
+            <article class="grid-content">
+                <h3>Основна частина сторінки</h3>
+                <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+
+                <section class="gallery" aria-label="Галерея зображень">
+                    <img src="https://picsum.photos/seed/gallery1/600/400" alt="Зображення 1" width="600" height="400">
+                    <img src="https://picsum.photos/seed/gallery2/600/400" alt="Зображення 2" width="600" height="400">
+                    <img src="https://picsum.photos/seed/gallery3/600/400" alt="Зображення 3" width="600" height="400">
+                    <img src="https://picsum.photos/seed/gallery4/600/400" alt="Зображення 4" width="600" height="400">
+                    <img src="https://picsum.photos/seed/gallery5/600/400" alt="Зображення 5" width="600" height="400">
+                    <img src="https://picsum.photos/seed/gallery6/600/400" alt="Зображення 6" width="600" height="400">
+                </section>
+            </article>
+
+            <aside class="grid-sidebar">
+                <p>Sidebar</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="grid-footer site-footer">
+        <p>© 2025 All right reserved</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+#specialties {
+  .cards-2 {
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+
+    > li {
+      flex: 1 1 280px;
+    }
+
+    .card {
+      border-radius: 20px;
+    }
+
+    .card-link {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      min-height: 200px;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
