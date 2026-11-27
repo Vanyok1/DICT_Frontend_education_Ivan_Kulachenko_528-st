@@ -1,0 +1,30 @@
+#news {
+  .section-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .news-card {
+    height: 100%;
+
+    time {
+      margin-top: auto;
+    }
+  }
+
+  .cards-4 > li {
+    display: flex;
+
+    .news-card {
+      flex: 1;
+    }
+  }
+
+  .news-more {
+    display: block;
+    margin: 40px auto 0;
+  }
+}

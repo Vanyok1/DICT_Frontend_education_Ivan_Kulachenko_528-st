@@ -1,0 +1,19 @@
+#contact {
+  .contact-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+
+    > div {
+      flex: 1 1 200px;
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

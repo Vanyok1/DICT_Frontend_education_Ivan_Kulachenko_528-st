@@ -1,0 +1,30 @@
+.site-footer {
+  padding: 40px 0;
+  background: $dark;
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    > * {
+      flex: 1 1 240px;
+    }
+  }
+
+}
+
+@media (max-width: $tab) {
+  .site-footer {
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-contacts {
+      text-align: center;
+    }
+  }
+}

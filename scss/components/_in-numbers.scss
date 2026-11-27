@@ -1,0 +1,32 @@
+#numbers {
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    row-gap: 24px;
+
+    li {
+      flex: 1 1 0;
+      min-width: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $widestmob) {
+  #numbers {
+    .stats {
+      li {
+        flex: 0 0 50%;
+
+        &:nth-child(odd) {
+          border-left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.grid-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+.grid-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 104px 1fr 104px;
+    align-items: center;
+    padding: 24px 0;
+    background: #1a1a1a;
+}
+
+.grid-header h1 {
+    grid-column: 2;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.grid-header .logo {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 16px;
+}
+
+.grid-nav {
+    grid-area: nav;
+    width: 100%;
+    padding: 16px;
+    background: #2e2e2e;
+}
+
+.grid-nav .main-menu .menu-link.is-active {
+    color: #ff3b39;
+}
+
+.grid-main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 24px;
+    padding: 32px 0;
+}
+
+.grid-intro h2 {
+    margin: 0 0 12px;
+    text-align: left;
+}
+
+.grid-intro p {
+    margin: 0;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background: #333;
+}
+
+.grid-content {
+    padding: 24px;
+    background: #262626;
+}
+
+.grid-content h3 {
+    margin: 0 0 12px;
+}
+
+.grid-content p {
+    margin: 0 0 24px;
+}
+
+.grid-sidebar {
+    padding: 24px;
+}
+
+.grid-sidebar p {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+.grid-footer {
+    grid-area: footer;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.grid-footer p {
+    margin: 0;
+}
+
+@media (max-width: 48em) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 30em) {
+    .grid-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 12px;
+    }
+
+    .grid-header .logo,
+    .grid-header h1 {
+        grid-column: 1;
+        grid-row: auto;
+        padding-left: 0;
+    }
+
+    .grid-body {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-content,
+    .grid-sidebar {
+        padding: 16px;
+    }
+}
